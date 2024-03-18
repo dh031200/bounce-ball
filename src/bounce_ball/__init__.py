@@ -71,9 +71,9 @@ class Env:
         canvas = np.full((h * 32, w * 32, 3), (0, 0, 0), dtype=np.uint8)
         for i in range(h):
             for j in range(w):
-                canvas[
-                    i * 32 : (i + 1) * 32, j * 32 : (j + 1) * 32
-                ] = self.block_images[self.map[i][j]]
+                canvas[i * 32 : (i + 1) * 32, j * 32 : (j + 1) * 32] = (
+                    self.block_images[self.map[i][j]]
+                )
         return canvas
 
     @property
