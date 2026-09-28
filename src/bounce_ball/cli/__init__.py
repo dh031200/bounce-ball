@@ -3,8 +3,8 @@
 # SPDX-License-Identifier: MIT
 import click
 
-from bounce_ball.__about__ import __version__
 from bounce_ball import BounceBall
+from bounce_ball.__about__ import __version__
 
 
 @click.group(
